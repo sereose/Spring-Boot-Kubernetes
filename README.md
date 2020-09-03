@@ -22,12 +22,15 @@ $JAVA_HOME
 
 3.check maven witch java version is configured (shoud be java 8)
 
+```
 mvn -v                     
 Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
 Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
 Java version: 1.8.0_265, vendor: AdoptOpenJDK, runtime: /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
 Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.15.2", arch: "x86_64", family: "mac"
+
+```
 
 4.
 
