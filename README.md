@@ -12,12 +12,12 @@ Based on the following resources and guids.
 
 
 ## How to install the app.
-App was build and configured on java8 version.
+App was build and configured on java8 version support.
 
 1.To install you shoud have setup your java envairment variable
 $JAVA_HOME
 
-2.setup Apache Maven
+2.setup Apache Maven https://maven.apache.org/download.cgi
 
 
 3.check maven witch java version is configured (shoud be java 8)
