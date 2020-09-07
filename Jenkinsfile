@@ -59,7 +59,6 @@ pipeline {
         stage ('build artifact') {
             steps {
                     script {
-#                        registryIp = sh(script: 'getent hosts registry.kube-system | awk \'{ print $1 ; exit }\'', returnStdout: true).trim()
                         sh "docker build . -t ${registryIp}/demo-app:${revision} --build-arg REVISION=${revision}"
                     }
                 }
