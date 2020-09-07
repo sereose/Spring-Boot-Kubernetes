@@ -33,7 +33,18 @@ pipeline {
                     sh "echo 'Building revision: ${revision}'"
                 }
             }
-
         }
+   stage ('compile') {
+            steps {
+		sh '''#!/bin/bash
+
+                    echo "Hello from bash"
+                    echo "Who I'm $SHELL"
+                '''
+                echo 'Hello, '
+            }
+        }
+
+
 }
 }
