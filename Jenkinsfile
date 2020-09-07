@@ -44,7 +44,17 @@ pipeline {
                 echo 'Hello, '
             }
         }
-
+        stage ('unit test') {
+            steps {
+                    sh 'echo "unit test"'
+                }
+            }
+        
+        stage ('integration test') {
+            steps {
+                    sh 'echo "integration test"'
+                }
+            }
 
 }
 }
