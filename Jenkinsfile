@@ -11,7 +11,7 @@ properties([
 
 def branch
 def revision
-def registryIp
+def registryIp="gcr.io/selfid"
 
 pipeline {
 
@@ -53,6 +53,15 @@ pipeline {
         stage ('integration test') {
             steps {
                     sh 'echo "integration test"'
+                }
+            }
+
+        stage ('build artifact') {
+            steps {
+                    script {
+#                        registryIp = sh(script: 'getent hosts registry.kube-system | awk \'{ print $1 ; exit }\'', returnStdout: true).trim()
+                        sh "docker build . -t ${registryIp}/demo-app:${revision} --build-arg REVISION=${revision}"
+                    }
                 }
             }
 
