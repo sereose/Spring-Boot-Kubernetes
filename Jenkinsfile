@@ -83,7 +83,7 @@ pipeline {
                 }
             }
             steps {
-                build job: './../Deploy', parameters: [
+                build job: './Deploy', parameters: [
                         [$class: 'StringParameterValue', name: 'GIT_REPO', value: 'Spring-Boot-Kubernetes'],
                         [$class: 'StringParameterValue', name: 'VERSION', value: revision],
                         [$class: 'StringParameterValue', name: 'ENV', value: branch == 'master' ? 'staging' : 'test']
