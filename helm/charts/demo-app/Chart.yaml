@@ -3,3 +3,4 @@ Description: A Helm chart for deploying demo-app  (Java Spring Boot) to k8s
 name: demo-app
 version: ${revision}
 appVersion: 1.0
+icon: https://www.flaticon.com/svg/static/icons/svg/2978/2978221.svg
