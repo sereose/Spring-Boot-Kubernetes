@@ -18,7 +18,7 @@ spec:
         app: demo
     spec:
       containers:
-      - image: gcr.io/selfid/demo-app:v1
+      - image: {{ .Values.registry }}/demo/app:{{ .Chart.Version }}
         name: demo-app
         resources: {}
 status: {}
