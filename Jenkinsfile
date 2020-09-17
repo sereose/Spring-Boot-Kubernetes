@@ -4,9 +4,10 @@ properties([
                         booleanParam(
                                 name: 'DEPLOY_BRANCH_TO_TST',
                                 defaultValue: false
+			),
+			booleanParam(
                                 name: 'DEPLOY_IMAGE_TO_GKE',
                                 defaultValue: false
-
                         )
                 ]
         )
