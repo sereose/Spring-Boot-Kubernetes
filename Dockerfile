@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk-alpine AS builder
+MAINTAINER  Author Name <churilov@email.com>
 WORKDIR target/dependency
 ARG APPJAR=target/*.jar
 COPY ${APPJAR} app.jar
